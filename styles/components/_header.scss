@@ -1,6 +1,6 @@
 // header styles
 .header {
-  padding-top: 20px;
+  margin: 20px 0 60px;
 
   &__page {}
 
@@ -14,7 +14,7 @@
 // tools-holder styles
 .tools-holder {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 
   &__lb {}
@@ -74,6 +74,7 @@
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 2px;
+  background-color: $white;
 
   opacity: 0;
   visibility: hidden;
@@ -96,10 +97,17 @@
 
 //list-tags styles
 .list-tags {
+  align-items: center;
+
   li {
-    margin: 0 6px;
+    padding: 4px;
+    // margin: 0 4px;
 
     font-size: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    border-radius: 4px;
 
     opacity: 1;
 
@@ -108,6 +116,7 @@
 
     &:hover {
       opacity: 0.7;
+      border-color: #7f8c8d;
     }
   }
 
@@ -190,7 +199,7 @@
 
     opacity: 0;
     visibility: hidden;
-    transform: translateY(50%);
+    transform: translateY(100px);
     transition: all 0.2s ease-in;
 
     &.is-active {

@@ -1,1 +1,19 @@
-.main-block {}
+.main-block {
+  min-height: 80vh;
+  height: 100%;
+  max-width: 76%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fiel-edit {
+  height: 100%;
+
+  &__text {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    resize: none;
+    line-height: 44px;
+  }
+}
