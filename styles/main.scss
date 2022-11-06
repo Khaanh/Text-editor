@@ -1,0 +1,31 @@
+@import 'helpers/_variables';
+@import 'helpers/_mixins';
+@import 'helpers/_reset';
+
+@import 'components/_header';
+@import 'components/_main-block';
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+
+.page-holder {
+  max-width: 1200px;
+  width: 100%;
+
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

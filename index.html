@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text editor</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="page-holder">
+      <header class="header">
+        <div class="header__page">
+
+          <form class="tools-holder">
+
+            <div class="heading-holder">
+              <span class="heading-holder__current">h1</span>
+
+              <ul class="header__list list-heading">
+                <li>h2</li>
+                <li>h3</li>
+                <li>h4</li>
+                <li>h5</li>
+              </ul>
+            </div>
+
+            <ul class="header__list list-tags" data-prop="text-align: center">
+              <li class="tag-elem-p">p</li>
+              <li class="tag-elem-i">i</li>
+              <li class="tag-elem-strong">strong</li>
+              <li class="tag-elem-link">link</li>
+              <li class="tag-elem-uppercase">ABC</li>
+              <li class="tag-elem-lowercase">ABC</li>
+              <li class="tag-elem-underline">u</li>
+            </ul>
+
+            <ul class="header__list list-positions">
+              <li class="pos-left">left</li>
+              <li class="pos-center">center</li>
+              <li class="pos-right">right</li>
+            </ul>
+
+            <div class="colors-block">
+              <button type="button" class="colors-block__point" id="btnChooseColor"></button>
+              <div class="colors-block__holder" id="colorsBlock">
+                <label class="tools-holder__lb colors-block__lb">
+                  <input type="search" class="tools-holder__search colors-block__search" placeholder="Search color...">
+                </label>
+                <ul class="colors-block__list" id="listColors"></ul>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </header>
+      <main class="main-block">
+        <form action="">
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
+      </main>
+    </div>
+  </div>
+
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
