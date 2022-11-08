@@ -23,6 +23,10 @@ let colors = [
 ];
 let fragment = new DocumentFragment();
 let btn = document.querySelector("#btnChooseColor");
+let areaText = document.querySelector("#areaText");
+let searchColor = document.querySelector("#searchColor");
+
+// areaText.contentEditable = true;
 
 class Pallete {
   constructor(arrColors, listDOM) {
@@ -47,14 +51,37 @@ class Pallete {
     this.listDOM.closest("#colorsBlock").classList.toggle("is-active");
   }
 
-  chooseColor() {}
+  chooseColor() {
+    let colors = this.listDOM.querySelectorAll("li");
+
+    colors.forEach((choosen) => {
+      choosen.addEventListener("click", () => {
+        areaText.style.color = `${choosen.getAttribute("data-color")}`;
+      });
+    });
+  }
+
+  searchColor() {
+    let colors = this.listDOM.querySelectorAll("li");
+
+    colors.forEach((color) => {
+      color.style.opacity = 0;
+    });
+  }
 }
 
 let pallete = new Pallete(colors, document.querySelector("#listColors"));
 
 pallete.createList();
 pallete.appendList();
+pallete.chooseColor();
 
 btn.addEventListener("click", () => {
   pallete.toggleList();
+});
+
+searchColor.addEventListener("input", function (e) {
+  if (this.value.length > 0) {
+    pallete.searchColor();
+  }
 });

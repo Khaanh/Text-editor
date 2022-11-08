@@ -52,7 +52,8 @@
               <button type="button" class="colors-block__point" id="btnChooseColor"></button>
               <div class="colors-block__holder" id="colorsBlock">
                 <label class="tools-holder__lb colors-block__lb">
-                  <input type="search" class="tools-holder__search colors-block__search" placeholder="Search color...">
+                  <input type="search" class="tools-holder__search colors-block__search" id="searchColor"
+                    placeholder="Search color...">
                 </label>
                 <ul class="colors-block__list" id="listColors"></ul>
               </div>
@@ -63,16 +64,16 @@
         </div>
       </header>
       <main class="main-block">
-        <form class="fiel-edit">
-          <textarea class="fiel-edit__text"></textarea>
-        </form>
+        <div class="fiel-edit">
+          <div class="fiel-edit__text" id="areaText"></div>
+        </div>
       </main>
     </div>
   </div>
 
 
-  <!-- <script src="./js/index.js"></script> -->
-  <script src="./js/PaletteOfColors.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/classPalette.js"></script>
 </body>
 
 </html>
